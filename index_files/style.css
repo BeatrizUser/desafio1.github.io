@@ -2,10 +2,6 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
 }
-body
-{
-  background: #ebebeb;
-}
 .payment-data-subtitle
 {
   font-size: 12px;
@@ -21,6 +17,9 @@ body
   font-size: 14px;
   color: #999;
   padding-top: 10px;
+}
+body{
+  background-color: #df0101;
 }
 .promo-lateral
 {
@@ -63,18 +62,22 @@ body
   width: max-content;
   height: auto;
 }
+.carousel-itempode
+{
+  transition: 2s ease;
+  opacity: .5s ease-out;
+}
+.carrossel
+{
+  padding-top: 106px;
+}
 .pg
 {
   background: #ebebeb;
   max-width: 100%;
-  padding: 30px 8px 1px 8px;
+  padding:40px 8px;
   align-items: center;
   justify-content: center;
   align-content: space-around;
   text-align: left;
-}
-.produtos-list
-{
-  width: 100%;
-  height: auto;
 }

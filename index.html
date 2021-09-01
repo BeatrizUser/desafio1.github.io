@@ -10,8 +10,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   <!-- css -->
-  <link rel="stylesheet" href="css/style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
   <!-- scripts js-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   <!-- titulo -->
@@ -19,7 +19,7 @@
 </head>
 <body>
   <!-- HEADER -->
-  <div class="header fixed-top">
+  <div class="header">
     <div class="container">
       <div class="row align-items-start">
         <div class="col-2">
@@ -138,40 +138,84 @@
   </div>
   <!-- //CARROSSEL -->
   <!-- MEIOS DE PAGAMENTO -->
-  <div class="pg">
-    <div class="container shadow p-3 mb-5 bg-light rounded">
-      <div class="row">
-        <div class="col-4 align-middle">
-          <h4>Meios de pagamento</h4>
-          <h6>Pagamento rápido e seguro com Mercado Pago</h6>
-        </div>
-        <div class="col-2 align-middle">
-          <a class="payment-data-icon" href="/gz/home/payments/methods" data-title="Meios de pagamento">
-            <img alt="Até 12 vezes sem juros" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/credit-card.svg">
-          </a>
-          <h6>Até 12 vezes sem juros</h6>
-        </div>
-        <div class="col-2 align-middle">
-          <a class="payment-data-icon" href="https://www.mercadolivre.com.br/mercado-credito/boleto-parcelado/?sk=RHRsnBTf" target="_blank" data-title="Meios de pagamento">
-            <img alt="Parcelado no boleto" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/mercado-creditsv2.svg">
-          </a>
-          <h6>Parcelado no boleto</h6>
-        </div>
-        <div class="col-2 align-middle">
-          <a class="payment-data-icon" href="/gz/home/payments/methods#pix" data-title="Meios de pagamento">
-            <img alt="Via Pix" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/qr.svg">
-          </a>
-          <h6>Via Pix</h6>
-        </div>
-        <div class="col-2 align-middle">
+  <div class="container">
+    <div class="row">
+      <div class="shadow p-3 mb-5 bg-light rounded">
+        <div class="row">
+          <div class="col-4 align-middle">
+            <h4>Meios de pagamento</h4>
+            <div class="subtitle-pg" style="display: inline;">Até 12 vezes sem juros</div>
+          </div>
+          <div class="col-2 align-middle">
             <a class="payment-data-icon" href="/gz/home/payments/methods" data-title="Meios de pagamento">
-              <img alt="Meios de pagamento" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/view-more.svg">
+              <img alt="Até 12 vezes sem juros" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/credit-card.svg">
             </a>
+            <h6>Até 12 vezes sem juros</h6>
+          </div>
+          <div class="col-2 align-middle">
+            <a class="payment-data-icon" href="https://www.mercadolivre.com.br/mercado-credito/boleto-parcelado/?sk=RHRsnBTf" target="_blank" data-title="Meios de pagamento">
+              <img alt="Parcelado no boleto" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/mercado-creditsv2.svg">
+            </a>
+            <h6>Parcelado no boleto</h6>
+          </div>
+          <div class="col-2 d-xl-block align-middle">
+            <a class="payment-data-icon" href="/gz/home/payments/methods#pix" data-title="Meios de pagamento">
+              <img alt="Via Pix" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/qr.svg">
+            </a>
+            <h6>Via Pix</h6>
+          </div>
+          <div class="col-2 align-middle">
+              <a class="payment-data-icon" href="/gz/home/payments/methods" data-title="Meios de pagamento">
+                <img alt="Meios de pagamento" src="https://http2.mlstatic.com/resources/frontend/homes-korriban/assets/images/payments/view-more.svg">
+              </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
 <!-- //MEIOS DE PAGAMENTO -->
+<!-- OFERTAS DO DIA -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-3 col-sm-6" >
+      <div class="p-3 bg-light rounded">
+        <h4>Produto 1</h4>
+        <div class="subtitle-pg" style="display: inline;">
+          <img class="produtos-list"src="img/produto1.webp" alt="">
+          <h5>R$ 49</h5><h6>Até 12 vezes sem juros</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6" >
+      <div class="p-3 bg-light rounded">
+        <h4>Produto 2</h4>
+        <div class="subtitle-pg" style="display: inline;">
+          <img class="produtos-list"src="img/produto1.webp" alt="">
+          <h5>R$ 49</h5><h6>Até 12 vezes sem juros</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6" >
+      <div class="p-3 bg-light rounded">
+        <h4>Produto 3</h4>
+        <div class="subtitle-pg" style="display: inline;">
+          <img class="produtos-list"src="img/produto1.webp" alt="">
+          <h5>R$ 49</h5><h6>Até 12 vezes sem juros</h6>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 col-sm-6" >
+      <div class="p-3 bg-light rounded">
+        <h4>Produto 4</h4>
+        <div class="subtitle-pg" style="display: inline;">
+          <img class="produtos-list"src="img/produto1.webp" alt="">
+          <h5>R$ 49</h5><h6>Até 12 vezes sem juros</h6>
+        </div>
+      </div>
+    </div> 
+  </div>
+</div>
+<!-- //OFERTAS DO DIA -->
 <p> ---   ESPAÇO EM BRANCO PRA NAO PERDER A REFERENCIA   --- </p>
 <!-- FOOTER -->
   <footer class="d-flex flex-wrap justify-content-between py-3 my-4 border-top fixed-bottom">
