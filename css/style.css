@@ -88,3 +88,10 @@ body
   margin-left: -12px;
   margin-right: -12px;
 }
+.mxw-slider
+{
+  min-height: 150px;
+  min-width: 800px;
+  max-height: 340px;
+  min-height: auto;
+}
