@@ -2,17 +2,37 @@
   font-family: 'Roboto', sans-serif;
   font-weight: 200;
 }
+.payment-data-subtitle
+{
+  font-size: 12px;
+  color: black;
+}
+.nav-footer-primaryinfo
+{
+  background:rgb(255 241 89);
+  font-size: 12px;
+}
+.float-start
+{
+  font-size: 14px;
+  color: #999;
+  padding-top: 10px;
+}
+body{
+  background-color: #df0101;
+}
 .promo-lateral
 {
   width: 340px;
   height: auto;
 }
 .cep-img:before{
-  content:'\EA46'
+  content:'\2607';
+  vertical-align: top;
 }
 .header{
   background:rgb(255 241 89);
-  font-size: 14px;
+  font-size: 13px;
 }
 .promo-lateral{
   padding: 0;
@@ -20,7 +40,7 @@
 }
 .ico-search::before
 {
-    content: '\EA27';
+    content: '\2315';
     vertical-align: top;
 }
 .logo
@@ -32,4 +52,32 @@
   padding: 7px 60px 9px 15px;
   box-shadow: 0 1px 2px 0 rgb(0 0 0 / 20%);
   height: 39px;
+}
+.ajust1
+{
+  width: 100%;
+}
+.img
+{
+  width: max-content;
+  height: auto;
+}
+.carousel-itempode
+{
+  transition: 2s ease;
+  opacity: .5s ease-out;
+}
+.carrossel
+{
+  padding-top: 106px;
+}
+.pg
+{
+  background: #ebebeb;
+  max-width: 100%;
+  padding:40px 8px;
+  align-items: center;
+  justify-content: center;
+  align-content: space-around;
+  text-align: left;
 }
