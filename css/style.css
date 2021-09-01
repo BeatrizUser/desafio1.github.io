@@ -78,3 +78,7 @@ body
   width: 100%;
   height: auto;
 }
+.prod-list
+{
+  margin: -24px;
+}
