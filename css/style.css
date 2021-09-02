@@ -24,8 +24,7 @@ body
 }
 .promo-lateral
 {
-  width: 340px;
-  height: auto;
+  max-width: 340px ;
 }
 .cep-img:before{
   content:'\2607';
@@ -57,11 +56,6 @@ body
 .ajust1
 {
   width: 100%;
-}
-.img
-{
-  width: max-content;
-  height: auto;
 }
 .pg
 {
@@ -136,4 +130,16 @@ body
 .card
 {
   height: fit-content;
+}
+.align-center
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.logo-row-lg
+{
+  display: flex;
+  flex-direction: column;
 }
