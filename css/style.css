@@ -95,3 +95,45 @@ body
   max-height: 340px;
   min-height: auto;
 }
+.img-prod
+{
+  border: 3px rgb(255, 255, 0);
+}
+.price
+{
+  font-size: 24px;
+  display: inline-flex;
+  align-items: flex-start;
+}
+.forma-pg
+{
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+.description-prod
+{
+  transition: 0.4s;
+  display: none;
+  margin-top: 10px;
+  font-size: 12px;
+  color: #999;
+  opacity: 0;
+  margin-bottom: 8px;
+  
+}
+.cents-price
+{
+  font-size: 12px;
+  margin-top: 6px;
+  margin-left: 1px;
+}
+.card:hover .description-prod
+{
+  display: flex;
+  opacity: 1;
+  transition: 0.8s;
+}
+.card
+{
+  height: fit-content;
+}
