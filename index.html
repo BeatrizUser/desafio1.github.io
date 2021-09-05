@@ -88,7 +88,7 @@
             this.speedRange = typeof param.speedRange === "number" ? param.speedRange : 10;
             this.sprites = [];
         
-            this.canvas.style.cssText = ["display: block", "position: absolute", "top: 0", "left: 0", "pointer-events: none"].join(";");
+            this.canvas.style.cssText = ["display: flex", "position: absolute", "top: 0", "left: 0", "pointer-events: none"].join(";");
         
             this.render = this.render.bind(this);
         
@@ -161,7 +161,7 @@
         
         (function () {
           var DURATION = 8500,
-              LENGTH = 90;
+              LENGTH = 50;
         
           new Confetti({
             width: window.innerWidth,
@@ -173,11 +173,11 @@
           setTimeout(function () {
             new Confetti({
               width: window.innerWidth,
-              height: window.innerHeight*2,
+              height: window.innerHeight,
               length: LENGTH,
               duration: DURATION
             });
-          }, DURATION/2);
+          }, DURATION);
         })();</script>     
     <header>
         <div class="title">
