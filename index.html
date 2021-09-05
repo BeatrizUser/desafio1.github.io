@@ -129,7 +129,7 @@
             var progress = this.progress.tick(now);
         
             this.canvas.width = this.width;
-            this.canvas.height = this.height;
+            this.canvas.height = 5000;
         
             for (var i = 0; i < this.length; ++i) {
               this.ctx.save();
@@ -147,9 +147,9 @@
             get: function get() {
               return {
                 SPRITE_WIDTH: 9,
-                SPRITE_HEIGHT: 16,
+                SPRITE_HEIGHT: 15,
                 PAPER_LENGTH: 100,
-                DURATION: 8000,
+                DURATION: 80,
                 ROTATION_RATE: 50,
                 COLORS: ["#EF5350", "#EC407A", "#AB47BC", "#7E57C2", "#5C6BC0", "#42A5F5", "#29B6F6", "#26C6DA", "#26A69A", "#66BB6A", "#9CCC65", "#D4E157", "#FFEE58", "#FFCA28", "#FFA726", "#FF7043", "#8D6E63", "#BDBDBD", "#78909C"]
               };
@@ -160,8 +160,8 @@
         }();
         
         (function () {
-          var DURATION = 8000,
-              LENGTH = 20;
+          var DURATION = 8500,
+              LENGTH = 90;
         
           new Confetti({
             width: window.innerWidth,
@@ -173,11 +173,11 @@
           setTimeout(function () {
             new Confetti({
               width: window.innerWidth,
-              height: window.innerHeight,
+              height: window.innerHeight*2,
               length: LENGTH,
               duration: DURATION
             });
-          }, DURATION / 1.5);
+          }, DURATION/2);
         })();</script>     
     <header>
         <div class="title">
