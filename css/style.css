@@ -142,3 +142,7 @@ body
   display: flex;
   flex-direction: column;
 }
+.fa-search:before 
+{
+  content: "\f002";
+}
