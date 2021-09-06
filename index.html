@@ -270,7 +270,7 @@
                     &nbsp;for (let produto of listadeprodutos){<br>
                     &nbsp;&nbsp;let price = produto.price<br>
                     &nbsp;&nbsp;&nbsp;if(preco <= produto.price){<br>
-                    &nbsp;&nbsp;&nbsp;console.log(produto)<br>
+                    &nbsp;&nbsp;&nbsp;return produto<br>
                     &nbsp;&nbsp;}<br>
                     &nbsp;}<br>
                     &nbsp;return "NENHUM PRODUTO ENCONTRADO COM ESSA AVALIAÇÃO."<br>
@@ -293,7 +293,7 @@
                     &nbsp;for (let produto of listadeprodutos){<br>
                     &nbsp;&nbsp;let price = produto.price<br>
                     &nbsp;&nbsp;&nbsp;if(preco >= produto.price){<br>
-                    &nbsp;&nbsp;&nbsp;console.log(produto)<br>
+                    &nbsp;&nbsp;&nbsp;return produto<br>
                     &nbsp;&nbsp;}<br>
                     &nbsp;}<br>
                     &nbsp;return "NENHUM PRODUTO ENCONTRADO COM ESSA AVALIAÇÃO."<br>
@@ -311,15 +311,18 @@
             <h2>Desafio 7</h2>
             <h5>7-Uma função de busca que recebe uma string qualquer e retorna os produtos que possuem essa string dentro do titulo, descrição ou categoria.</h5>
             <div class="code">
-                <code>function filtrarporpalavra(listadeprodutos, palavra){<br><br>
+                <code>//FUNÇÃO QUE BUSCA O PRODUTO PELO TITULO USANDO PALAVRAS-CHAVE//<br><br>
+                  function filtrarporpalavra(listadeprodutos, palavra){<br><br>
                     &nbsp;for (let produto of listadeprodutos){<br>
                         &nbsp;&nbsp;let title = produto.title<br>
                         &nbsp;&nbsp;let description = produto.description<br>
                         &nbsp;&nbsp;let gategoria = produto.category<br><br>
                       
-                        &nbsp;&nbsp;let result = title.search(palavra)<br>
-                        &nbsp;&nbsp;&nbsp;if (result >= 0)<br>   
-                        &nbsp;&nbsp;&nbsp;console.log(produto)<br>
+                        &nbsp;&nbsp;let searchtitle = title.search(palavra)<br>
+                        &nbsp;&nbsp;let searchdescription = description.search(palavra)<br>
+                        &nbsp;&nbsp;let searchcategory = category.search(palavra)<br>
+                        &nbsp;&nbsp;&nbsp;if (searchtitle >= 0 || searchdescription >= 0 || searchcategory >= 0)<br>   
+                        &nbsp;&nbsp;&nbsp;return produto<br>
                         &nbsp;}<br>
                         &nbsp;&nbsp;return "Fim da Busca."<br>
                   }<br><br>
