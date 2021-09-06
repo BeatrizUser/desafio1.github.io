@@ -57,7 +57,7 @@ function filtrarprodutospelorate(listadeprodutos, rate){
   for (let produto of listadeprodutos){
   	let rating = produto.rating
     	if(rate <= rating.rate){
-      	console.log(produto)
+      	return produto
     }
     
   }
@@ -76,7 +76,7 @@ function filtrarprodutospeloprecomaior(listadeprodutos, preco){
   for (let produto of listadeprodutos){
   	let price = produto.price
     	if(preco <= produto.price){
-      	console.log(produto)
+      	return produto
     }
     
   }
@@ -95,7 +95,7 @@ function filtrarprodutospeloprecomenor(listadeprodutos, preco){
   for (let produto of listadeprodutos){
   	let price = produto.price
     	if(preco >= produto.price){
-      	console.log(produto)
+      	return produto
     }
     
   }
@@ -114,15 +114,16 @@ function filtrarporpalavra(listadeprodutos, palavra){
   for (let produto of listadeprodutos){
   	let title = produto.title
     let description = produto.description
-    let gategoria = produto.category
+    let category = produto.category
     
-    let result = title.search(palavra)
+    let searchtitle = title.search(palavra)
+    let searchdescription = description.search(palavra)
+    let searchcategory = category.search(palavra)
     	
-     	if (result >= 0)
-      	
-    	console.log(produto)
+     	if (searchtitle >= 0 || searchdescription >= 0 || searchcategory >= 0)
+      	return produto
   }
-  return "Fim da Busca."
+  return "Nenhum produto encontrado."
 }
 
 // VARIAVEL QUE RECEBE O RESULTADO DA FUNÇÃO //
